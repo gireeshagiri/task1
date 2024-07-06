@@ -1,0 +1,139 @@
+[
+    {
+      "pk": 90,
+      "name": "Gold Coin",
+      "points": 100,
+      "display_img_url": "",
+      "quantity": 5,
+      "valid_until": null,
+      "low_quantity": 2
+    },
+    {
+      "pk": 91,
+      "name": "Silver Medal",
+      "points": 50,
+      "display_img_url": "image2.jpeg",
+      "quantity": 10,
+      "valid_until": null,
+      "low_quantity": 3
+    },
+    {
+      "pk": 93,
+      "name": "Bronze Badge",
+      "points": 25,
+      "display_img_url": "image3.jpeg",
+
+      "quantity": 20,
+      "valid_until": "2024-12-31T00:00:00",
+      "low_quantity": 5
+    },
+    {
+      "pk": 94,
+      "name": "Platinum Trophy",
+      "points": 200,
+      "display_img_url": "",
+      "quantity": 3,
+      "valid_until": "2024-12-31T00:00:00",
+      "low_quantity": 1
+    },
+    {
+      "pk": 95,
+      "name": "Diamond Ring",
+      "points": 500,
+      "display_img_url": "",
+      "quantity": 1,
+      "valid_until": "2024-12-31T00:00:00",
+      "low_quantity": 1
+    },
+    {
+      "pk": 96,
+      "name": "Emerald Pendant",
+      "points": 300,
+      "display_img_url": "",
+      "quantity": 4,
+      "valid_until": "2024-12-31T00:00:00",
+      "low_quantity": 2
+    },
+    {
+      "pk": 97,
+      "name": "Ruby Bracelet",
+      "points": 150,
+      "display_img_url": "",
+      "quantity": 8,
+      "valid_until": "2024-12-31T00:00:00",
+      "low_quantity": 3
+    },
+    {
+      "pk": 98,
+      "name": "Sapphire Earrings",
+      "points": 180,
+      "display_img_url": "",
+      "quantity": 6,
+      "valid_until": "2024-12-31T00:00:00",
+      "low_quantity": 2
+    },
+    {
+      "pk": 99,
+      "name": "Topaz Necklace",
+      "points": 120,
+      "display_img_url": "",
+      "quantity": 12,
+      "valid_until": "2024-12-31T00:00:00",
+      "low_quantity": 4
+    },
+    {
+      "pk": 100,
+      "name": "Amethyst Ring",
+      "points": 80,
+      "display_img_url": "",
+      "quantity": 15,
+      "valid_until": "2024-12-31T00:00:00",
+      "low_quantity": 5
+    },
+    {
+      "pk": 101,
+      "name": "Pearl Necklace",
+      "points": 250,
+      "display_img_url": "",
+      "quantity": 2,
+      "valid_until": "2024-12-31T00:00:00",
+      "low_quantity": 1
+    },
+    {
+      "pk": 102,
+      "name": "Opal Brooch",
+      "points": 160,
+      "display_img_url": "",
+      "quantity": 7,
+      "valid_until": "2024-12-31T00:00:00",
+      "low_quantity": 3
+    },
+    {
+      "pk": 103,
+      "name": "Coral Ring",
+      "points": 90,
+      "display_img_url": "",
+      "quantity": 18,
+      "valid_until": "2024-12-31T00:00:00",
+      "low_quantity": 6
+    },
+    {
+      "pk": 104,
+      "name": "Jade Pendant",
+      "points": 110,
+      "display_img_url": "",
+      "quantity": 9,
+      "valid_until": "2024-12-31T00:00:00",
+      "low_quantity": 3
+    },
+    {
+      "pk": 105,
+      "name": "Obsidian Necklace",
+      "points": 70,
+      "display_img_url": "",
+      "quantity": 22,
+      "valid_until": "2024-12-31T00:00:00",
+      "low_quantity": 7
+    }
+  
+]

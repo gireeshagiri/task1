@@ -1,0 +1,111 @@
+    <!-- rewards.component.html -->
+
+<div class=" mt-4"> 
+
+    <div class="row col-12">
+        <div class="col-12">
+            <label for="search " class="fn-26 fw-700">Search</label>
+            <input type="text" id="search" class="form-control mb-3"  (input)="onSearchChange($event)" placeholder="Search" [(ngModel)]="searchTerm">
+    
+        </div>
+        <div class=" row col-12">
+<div  class="col-lg-8 ">
+   <div class="row col-12" ><h4 class=" pb-0">Applied Filters :</h4> <button type="button" class="btn btn-light">e-Vochure <em class="fa fa-times"></em></button> <button type="button" class="btn btn-light"> Clear Flters <em class="fa fa-times"></em></button></div>
+  </div>
+  <div class="col-lg-4 text-end">
+   <button type="button" class="btn btn-danger m-2" (click)="toggleSideNav()"> <em class="fa fa-search mr-2"></em>Sort</button>
+  </div>
+        </div>
+        <div class="col-lg-3 col-md-12 col-12">
+            <div class="card p-2">
+            <div class="card-title">
+                <h4>
+                    Categories
+                </h4>
+            </div>
+            <div >
+                <div class="card leftcard">
+                <div class=" row  m-1">                         
+                         <p class="pb-0 mb-0 col-md-10" > <em class="fa fa-angle-down mt-2"></em> <label class="ml-2">e-Vochure</label> 
+                         </p>
+                         
+                         <div class="col-md-2 text-right"><em class="fa fa-check-circle text-orange"></em></div>
+                    </div>
+                    <div class=" row  m-1">                         
+                        <p class="pb-0 mb-0 col-md-10" > <em class="fa fa-angle-down mt-2"></em> <label class="ml-2">Products</label> 
+                        </p>
+                        
+                        <div class="col-md-2 text-right"><em class="far fa  fa-check-circle text-grey"></em></div>
+                   </div>
+                </div>
+
+                <div class="card leftcard" >
+                    <div class=" row  m-1">                         
+                             <p class="pb-0 mb-0 col-md-10" > <em class="fa fa-angle-up mt-2"></em> <label class="ml-2">Evergreen</label> 
+                             </p>
+                             
+                             <div class="col-md-2 text-right"><em class="fa far fa-check-circle  text-grey"></em></div>
+                        </div>
+                        <div class=" row  m-1">                         
+                           
+                       </div>
+                    </div>
+                    <div class="card leftcard" >
+                        <div class=" row  m-1">                         
+                                 <p class="pb-0 mb-0 col-md-10" > <em class="fa fa-angle-up mt-2"></em> <label class="ml-2">Fashion & Retail</label> 
+                                 </p>
+                                 
+                                 <div class="col-md-2 text-right"><em class="fa far fa-check-circle  text-grey"></em></div>
+                            </div>
+                            <div class=" row  m-1">                         
+                               
+                           </div>
+                        </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-12 col-12">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4" *ngFor="let reward of rewardsData">
+                    <div class="card">
+                        <img [src]="'../../../assets/images/' + reward.pk + '.jpeg'"  class="card-img-top img-fluid" alt="Reward Image">
+                        <div class="card-body text-center">
+                            <h5 class="card-title ">{{ reward.name }}</h5>
+                            <p class="card-text"><ng-container  *ngIf="reward.points"> {{ reward.points }} Points </ng-container></p>
+                            <hr>
+                            <p class="card-text" > <ng-container  ><span class="text-grey"> Valid Until</span> {{ reward.valid_until !== null && reward.valid_until !== undefined ? (reward.valid_until | date:'dd-MM-yyyy') : '-' }}</ng-container></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 text-end">
+               {{rewardsData?.length}} per page
+        </div>
+    </div>
+ 
+</div>
+  <!-- Full-screen side navigation -->
+  <div class="side-nav" [class.open]="sideNavOpen">
+    <div class="mt-5 p-2">
+        <div class="d-flex">
+            <h6> Filtered By</h6>
+            <button class="btn btn-warning close-btn mt-3" (click)="closeSideNav()">Reset all</button>
+
+        </div>
+           <div class="d-flex"> 
+            <button type="button" class="btn btn-red text-orange" (click)="sortByNameAscending()">A-z </button>
+             <button type="button" class="btn btn-red text-orange" (click)="sortByNameDescending()"> Z-a</button>
+           </div>
+
+
+
+
+           <div class="row apply"> 
+            <button type="button" class="btn btn-red text-orange" (click)="applyFilters()">Apply </button>
+
+            </div>
+    </div>
+
+  </div>
+  
